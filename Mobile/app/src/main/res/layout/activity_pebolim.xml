@@ -1,72 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.biancagarcia.mobile1.MainActivity">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:orientation="horizontal" >
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="text"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="text"/>
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <!--app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="78dp">-->
 
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Time 1"
+            android:textSize="30dp"
+
+           />
+            <!--
+            android:layout_marginStart="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:height="50dp"
+            -->
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="Time 1"
+            android:textSize="30dp"
+
+
+            />
+        <!--
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:height="50dp"-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <!--
+        android:layout_marginTop="16dp"-->
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:layout_marginLeft="16dp"
+
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/color_points"
+            android:textSize="50dp"/>
+        <!-- android:height="50dp"
+         android:layout_marginStart="24dp"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+
+            android:text="X"
+            android:textColor="@color/aqua_blue"
+            android:textSize="30dp"/>
+        <!--android:layout_marginLeft="50dp"-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/color_points"
+            android:textSize="50dp"/>
+            <!-- android:height="50dp"
+             android:layout_marginStart="24dp"-->
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Vitorias: 0"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Vitorias: 0"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="32dp">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="adicionar gols:"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
-            android:orientation="horizontal"
-            android:background="@color/cinza"
-            android:layout_marginLeft="120dp"
-            android:layout_marginRight="120dp"
-            android:minHeight="150dp"
+    </LinearLayout>
 
-            >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
 
-                android:inputType="text"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:orientation="horizontal"
-            android:background="@color/cinza"
-            android:layout_marginLeft="120dp"
-            android:layout_marginRight="120dp"
-            android:minHeight="150dp"
-            >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="text"
-                />
-        </LinearLayout>
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="48dp"
+            android:background="@color/aqua_blue"
+            android:text="+1"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="48dp"
+            android:background="@color/aqua_blue"
+            android:text="-1"
+            android:textSize="30dp" />
+
     </LinearLayout>
 
 </LinearLayout>
-
-
-
